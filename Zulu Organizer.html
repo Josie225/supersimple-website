@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html#schedule -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulu Organizer</title>
+    <link rel="stylesheet" href="./Zulu Organizer_files/styles.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1173.0" data-gr-ext-installed="">
+    <div class="content_container">
+        <div class="header">
+            <h1 align="center">My Website</h1>
+            <h5 align="center">welcome to my organization site! I hope you enjoye it</h5>
+        </div>
+    <!-- navigation section -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="http://127.0.0.1:5500/index.html#home" id="navbar_name">ANGIE's</a>
+            <div class="navbar_toggle" id="mobile-menu"></div>
+        </div>
+        <ul class="navbar_menu"></ul>
+        <li class="navbar_item">
+            <a href="http://127.0.0.1:5500/hero_section" class="navbar_link" id="home-page">Home</a>
+        </li>
+        <li class="navbar_item">
+            <a href="http://127.0.0.1:5500/At-Home" class="navbar_link" id="schedule-page">Schedule</a>
+        </li>
+    </nav>
+
+
+        <!-- hero body -->
+        <div class="body-Title" align="center">
+        <div class="hero_section" align="center" id="#home">
+            <h1 align="center">School Schedule</h1>
+            <div class="body-section">
+            <div class="S_column">
+                <table border="1;" align="center">
+                    <tbody><tr>
+                     </tr><tr>
+                         <th> Day </th>
+                         <th> Assgn.</th>
+                         <th> Time Goals </th>
+                     </tr>
+                     <tr>
+                         <td> <b>Programming</b> </td>
+                         <td> <input type="text"></td>
+                         <td> <input type="checkbox"> <input type="text" min="3" max="5" <=""></td>
+                     </tr>
+                     <tr>
+                         <td><b>Ap US History</b></td>
+                         <td> <input type="text" <="" td="">
+                         </td><td> <input type="checkbox"> <input type="text" min="3" max="5" <=""></td>
+                     </tr>
+                     <tr>
+                         <td> <b>Ap Biology </b></td>
+                         <td> <input type="text" <="" td="">
+                         </td><td><input type="checkbox"> <input type="text" min="3" max="5" <=""></td>
+                     
+                     </tr>
+                     <tr>
+                         <td> <b>Pre Calculus </b></td>
+                         <td> <input type="text" <="" td="">
+                         </td><td><input type="checkbox"> <input type="text" min="3" max="5" <=""></td>
+                     </tr><tr>
+                         <td><b> English </b></td>
+                         <td> <input type="text" <="" td="">
+                         </td><td><input type="checkbox"> <input type="text" min="3" max="5" <=""></td>
+                     </tr></tbody></table>
+                 
+            </div>
+            <div class="S_column2">
+                <img src="./Zulu Organizer_files/cute_clouds.gif" alt="cute clouds gif" align="right">
+                   
+                    <table border="1">
+                        <tbody><tr>
+                            </tr><tr>
+                                <th align="center"> To Do List</th>
+                            </tr>
+                        <tr>
+                            <td><input type="checkbox"><input type="text" <="" td="">
+                            </td></tr>
+                        <tr>
+                            <td><input type="checkbox"><input type="text"></td>
+                          </tr><tr>
+                            <td><input type="checkbox"><input type="text"></td>
+                        </tr><tr>
+                            <td><input type="checkbox"><input type="text"></td>
+                         </tr><tr>
+                            <td><input type="checkbox"><input type="text"></td>
+                         </tr></tbody></table>
+             </div>
+        </div>   
+    </div>
+</div>
+
+<!-- Home planner -->
+<div class="At-home">
+    <div class=" At-Home_Container"> 
+        <h1 align="center">At Home Schedule</h1>
+           
+            <table class="center" border="1">
+                <tbody><tr>
+                    </tr><tr>
+                        <th> To Do List</th>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox"><input type="text" <="" td="">
+                    </td></tr>
+                <tr>
+                    <td><input type="checkbox"><input type="text"></td>
+                  </tr><tr>
+                    <td><input type="checkbox"><input type="text"></td>
+                </tr><tr>
+                    <td><input type="checkbox"><input type="text"></td>
+                 </tr><tr>
+                    <td><input type="checkbox"><input type="text"></td>
+                 </tr></tbody></table> 
+
+    </div>
+</div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
